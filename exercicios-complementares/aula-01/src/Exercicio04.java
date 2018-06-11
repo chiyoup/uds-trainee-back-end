@@ -6,7 +6,7 @@ public class Exercicio04 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite um número: ");
         double numero = scanner.nextDouble();
-        System.out.println(eInteiro(scanner.nextDouble()));
+        System.out.println(eInteiro(numero));
     }
 
     public static String eInteiro(double numero) {
