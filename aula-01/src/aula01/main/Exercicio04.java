@@ -1,4 +1,6 @@
- public class Exercicio04 {
+package aula01.main;
+
+public class Exercicio04 {
     public static void main(String[] args) {
         repeteRomano();
     }

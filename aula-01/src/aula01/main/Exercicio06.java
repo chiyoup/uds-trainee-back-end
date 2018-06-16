@@ -1,3 +1,5 @@
+package aula01.main;
+
 import java.util.Scanner;
 
 public class Exercicio06 {

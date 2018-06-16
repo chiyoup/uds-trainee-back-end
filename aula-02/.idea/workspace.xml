@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cce834b-f7f7-47c2-bcaa-fff8b4409a4b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula01/main/Exercicio02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aula-02/src/aula02/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/main/Exercicio03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/main/Exercicio04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/main/Exercicio05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exercicio06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/main/Exercicio06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula01/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercicios-complementares/aula-01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercicios-complementares/aula-01/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="321cf638-96eb-492c-80af-ae4e399871e2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,16 +10,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="aula-01" />
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Exercicio02.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/aula01/main/Exercicio02.java">
+      <file leaf-file-name="Pessoa.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aula02/main/Pessoa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/aula02/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -43,52 +39,43 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Exercicio02.java" />
-        <option value="$PROJECT_DIR$/src/Exercicio03.java" />
-        <option value="$PROJECT_DIR$/src/Exercicio04.java" />
-        <option value="$PROJECT_DIR$/src/Exercicio06.java" />
-        <option value="$PROJECT_DIR$/src/Exercicio05.java" />
+        <option value="$PROJECT_DIR$/src/aula02/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/aula02/main/Pessoa.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="27" />
     <option name="y" value="28" />
     <option name="width" value="1346" />
     <option name="height" value="698" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="aula-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aula-01" type="462c0819:PsiDirectoryNode" />
+              <item name="aula-02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aula-02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="aula-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aula-01" type="462c0819:PsiDirectoryNode" />
+              <item name="aula-02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aula-02" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="aula-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aula-01" type="462c0819:PsiDirectoryNode" />
+              <item name="aula-02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aula-02" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -96,12 +83,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercicios-complementares" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -115,43 +104,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Exercicio06">
-    <configuration name="Exercicio03 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula01.main.Exercicio03" />
-      <module name="aula-01" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Exercicio01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula02.main.Exercicio01" />
+      <module name="aula-02" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula01.main.*" />
+          <option name="PATTERN" value="aula02.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Exercicio04 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula01.main.Exercicio04" />
-      <module name="aula-01" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula01.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Exercicio05 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula01.main.Exercicio05" />
-      <module name="aula-01" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula01.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Exercicio06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula01.main.Exercicio06" />
-      <module name="aula-01" />
+    <configuration name="Exercicio02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula01.main.Exercicio02" />
+      <module name="aula-02" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,12 +128,12 @@
       </extension>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula01.main.Main" />
-      <module name="aula-01" />
+      <option name="MAIN_CLASS_NAME" value="aula02.main.Main" />
+      <module name="aula-02" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula01.main.*" />
+          <option name="PATTERN" value="aula02.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,18 +181,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Exercicio03 (1)" />
-      <item itemvalue="Application.Exercicio04 (1)" />
-      <item itemvalue="Application.Exercicio05 (1)" />
-      <item itemvalue="Application.Exercicio06" />
+      <item itemvalue="Application.Exercicio02" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Exercicio06" />
-        <item itemvalue="Application.Exercicio05 (1)" />
-        <item itemvalue="Application.Exercicio04 (1)" />
-        <item itemvalue="Application.Exercicio03 (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Exercicio01" />
+        <item itemvalue="Application.Exercicio02" />
       </list>
     </recent_temporary>
   </component>
@@ -234,37 +196,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4cce834b-f7f7-47c2-bcaa-fff8b4409a4b" name="Default" comment="" />
-      <created>1528647548426</created>
+      <changelist id="321cf638-96eb-492c-80af-ae4e399871e2" name="Default" comment="" />
+      <created>1529148933574</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1528647548426</updated>
+      <updated>1529148933574</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32792208" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32954547" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" show_stripe_button="false" sideWeight="0.50073206" side_tool="true" weight="0.29058442" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.48863637" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49872124" visible="true" weight="0.17423134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" show_stripe_button="false" sideWeight="0.50127876" side_tool="true" weight="0.24962406" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -282,34 +245,70 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio05.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio04.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio04.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio04.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio02.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio03.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio04.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio05.java" />
-    <entry file="file://$PROJECT_DIR$/src/Exercicio06.java" />
-    <entry file="file://$PROJECT_DIR$/src/aula01/main/Exercicio02.java">
+    <entry file="file://$PROJECT_DIR$/src/Exercicio01.java" />
+    <entry file="file://$PROJECT_DIR$/src/aula02/main/Exercicio01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aula02/main/exercicio-3.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aula02/main/Pessoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aula02/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>

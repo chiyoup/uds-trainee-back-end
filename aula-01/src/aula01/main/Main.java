@@ -1,3 +1,5 @@
+package aula01.main;
+
 public abstract class Main {
     public static Boolean sexoFeminino = true;
 

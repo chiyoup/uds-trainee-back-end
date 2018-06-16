@@ -1,3 +1,5 @@
+package aula01.main;
+
 public class Exercicio02 {
     public static void main(String[] args) {
         Integer dia = 5;
@@ -27,6 +29,6 @@ public class Exercicio02 {
             default:
                 System.out.println("Número Inválido!");
                 break;
-            }
+        }
     }
 }

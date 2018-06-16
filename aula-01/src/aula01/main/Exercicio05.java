@@ -1,13 +1,11 @@
-import java.util.Scanner;
+package aula01.main;
 
-public class Exercicio03 {
+public class Exercicio05 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite um numero: ");
-        System.out.println(converteRomano(scanner.nextInt()));
+        repeteRomano();
     }
 
-    public static String converteRomano(Integer numero){
+    public static String converteRomano(Integer numero) {
         switch (numero) {
             case 1:
                 return "I";
@@ -33,5 +31,18 @@ public class Exercicio03 {
                 return "numero inválido!";
         }
     }
-}
 
+    public static void repeteRomano() {
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(converteRomano(i));
+        }
+    }
+
+    /*public static void repeteRomano() {
+        int i = 10;
+        while (i >= 1) {
+            System.out.println(converteRomano(i));
+            i--;
+        }
+    }*/
+}
