@@ -1,4 +1,4 @@
-package aula01.main;
+package aula02.exercicio02;
 import java.util.ArrayList;
 
 public class Exercicio02 {
