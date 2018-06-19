@@ -1,0 +1,12 @@
+Exercicio 08 - Hardcore - Aula 02
+- crie uma aplicação orientada a objetos 
+que possua abstração, encapsulamento, 
+herança e polimorfismo.
+
+Exercicios Complementares
+
+04. até 50 pontos
+Crie uma aplicação orientada a objetos 
+que possua abstração, encapsulamento, 
+herança e polimorfismo bem definidas.
+
