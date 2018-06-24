@@ -1,12 +1,12 @@
-/*package aula02.exercicio04;
+package aula02.exercicio04;
 
-public class Cliente extends contaCorrente {
+public class Cliente extends ContaCorrente {
     private String nome;
-    private Double cpf;
+    private String cpf;
     private String endereco;
-    private contaCorrente contaC;
+    private ContaCorrente contaC;
 
-    public void Cliente(String nome, Double cpf, String endereco) {
+    public Cliente(String nome, String cpf, String endereco) {
         this.nome = nome;
         this.cpf = cpf;
         this.endereco = endereco;
@@ -21,13 +21,20 @@ public class Cliente extends contaCorrente {
     }
 
     public void informacoesCliente() {
-        System.out.println("Cliente: " + nome + "\n CPF: " + cpf + "\nEndereço: " + endereco);
+        System.out.println("\nCliente: " + nome + "\nCPF: " + cpf + "\nEndereço: " + endereco + ".");
     }
 
-    public void abrirConta(String nomeConta, Integer agencia, Integer numeroConta){
-        contaCorrente nomeConta = new contaCorrente(agencia, numeroConta);
-        contaC = nomeConta;
+    public void abrirContaCorrente(Integer agencia){
+        this.contaC = new ContaCorrente(agencia);
         System.out.println("Parabens, sua conta foi criada!!!\nNome: " + nome
-                            + "\nAgencia: " + agencia + "\nConta: " + contaC);
+                            + "\nAgencia: " + agencia + "\nConta: " + contaC.numeroConta);
     }
-}*/
+
+    public ContaCorrente getContaC() {
+        return contaC;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}

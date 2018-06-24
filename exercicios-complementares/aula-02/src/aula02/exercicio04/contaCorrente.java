@@ -1,34 +1,47 @@
-/*package aula02.exercicio04;
+package aula02.exercicio04;
+import java.util.Random;
 
-public class contaCorrente implements Conta {
+public class ContaCorrente implements Conta {
     protected Integer agencia;
     protected Integer numeroConta;
-    private Double saldo;
+    protected Double saldo = 0.0;
 
-    public void contaCorrente(Integer agencia, Integer numeroConta) {
+    protected ContaCorrente() {
+
+    }
+
+    public ContaCorrente(Integer agencia) {
+        Random random = new Random();
+        this.numeroConta = random.nextInt(9999);
         this.agencia = agencia;
-        this.numeroConta = numeroConta;
     }
 
     @Override
-    public Double consultarSaldo() {
-        return this.saldo;
+    public void consultarSaldo(Cliente cliente) {
+        System.out.println(cliente.getContaC().saldo);
     }
 
     @Override
-    public void transferencia(String contaRemetente, Double valor, String contaDestinatario) {
-        this.contaRemetente.saldo -= valor;
-        this.contaDestinatario.saldo += valor;~
-
-    }
-
-    @Override
-    public void deposito(String contaDestinatario, Double valor) {
-        contaDestinatario.saldo += valor;
-    }
-
-    @Override
-    public void sacar(Double valor) {
+    public void transferencia(Double valor, Cliente cliente) {
         this.saldo -= valor;
+        cliente.getContaC().saldo += valor;
+        System.out.println("Transferencia no valor de " + valor + " para " + cliente.getNome() + " efetuada com sucesso!");
+
     }
-}*/
+
+    @Override
+    public void deposito(Cliente cliente, Double valor) {
+        cliente.getContaC().saldo += valor;
+        System.out.println("Deposito no valor de " + valor + " efetuado com sucesso!");
+    }
+
+    @Override
+    public void sacar(Cliente cliente, Double valor) {
+        if (cliente.getContaC().saldo <= 0) {
+            System.out.println("Saldo insuficiente");
+        } else {
+            cliente.getContaC().saldo -= valor;
+            System.out.println("Saque no valor de " + valor + " efetuado com sucesso!");
+        }
+    }
+}

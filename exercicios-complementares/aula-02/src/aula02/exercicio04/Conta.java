@@ -1,8 +1,8 @@
 package aula02.exercicio04;
 
 public interface Conta {
-    Double consultarSaldo();
-    void transferencia();
-    void deposito();
-    void sacar();
+    void consultarSaldo(Cliente cliente);
+    void transferencia(Double valor, Cliente contaDestinatario);
+    void deposito(Cliente contaDestinatario, Double valor);
+    void sacar(Cliente cliente, Double valor);
 }

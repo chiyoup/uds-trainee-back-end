@@ -4,6 +4,7 @@ import aula02.exercicio03.PatoDeCabecaVermelha;
 import aula02.exercicio02.Pedido;
 import aula02.exercicio02.Produto;
 import aula02.exercicio01.Macaco;
+import aula02.exercicio04.Cliente;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +32,20 @@ public class Main {
         PatoDeCabecaVermelha pato2 = new PatoDeCabecaVermelha();
         pato2.voar();
 
-        //Cliente cliente1 = new Cliente("Chiyo", 20657812977, "Av. Colombo, 890, Zona 04, Maringá, Paraná");
+        Cliente cliente1 = new Cliente("Chiyo", "106.578.129-77", "Av. Colombo, 890, Zona 04, Maringá, Paraná");
+        cliente1.informacoesCliente();
+        cliente1.abrirContaCorrente(3755);
+        cliente1.deposito(cliente1, 4000.00);
+        cliente1.consultarSaldo(cliente1);
+        cliente1.sacar(cliente1, 100.00);
+        cliente1.consultarSaldo(cliente1);
+
+        Cliente cliente2 = new Cliente("Gustavo", "222.309.456-98", "Rua Lagosta, 788, Centro, Maringá, Paraná");
+        cliente2.informacoesCliente();
+        cliente2.abrirContaCorrente(9090);
+        cliente2.consultarSaldo(cliente2);
+
+        cliente1.transferencia(500.00, cliente2);
+        cliente2.consultarSaldo(cliente2);
     }
 }
