@@ -10,26 +10,17 @@ public class PizzaServiceImpl implements PizzaService {
     @Autowired
     private PizzaRepository pizzaRepository;
 
+
     @Override
-    public Pizza criar(Pizza pizza) {
+    public Pizza salvar(PizzaDTO pizzaDTO) {
+        Pizza pizza = new Pizza(pizzaDTO.getMassa(), pizzaDTO.getQueijo(), pizzaDTO.getMolho(), pizzaDTO.getSabor(), pizzaDTO.getTempoDePreparo());
         return this.pizzaRepository.save(pizza);
     }
 
     @Override
-    public void remover(UUID id) {
-        this.pizzaRepository.delete(id);
-    }
-
-    @Override
-    public void editar(UUID id, Pizza pizza) {
-        Pizza pizzaRecuperada = this.obter(id);
-        remover(id);
-        pizzaRecuperada.setMassa(pizza.getMassa());
-        pizzaRecuperada.setQueijo(pizza.getQueijo());
-        pizzaRecuperada.setMolho(pizza.getMolho());
-        pizzaRecuperada.setSabor(pizza.getSabor());
-        pizzaRecuperada.setTempoDePreparo(pizza.getTempoDePreparo());
-        this.pizzaRepository.save(pizzaRecuperada);
+    public Pizza editar(UUID id, PizzaDTO pizzaDTO) {
+        Pizza pizza = null;
+        return this.pizzaRepository.save(pizza);
     }
 
     @Override
@@ -40,5 +31,10 @@ public class PizzaServiceImpl implements PizzaService {
     @Override
     public Set<Pizza> listar() {
         return this.pizzaRepository.findAll();
+    }
+
+    @Override
+    public void remover(UUID id) {
+        this.pizzaRepository.delete(id);
     }
 }

@@ -1,8 +1,8 @@
 package br.com.uds.pizza;
 import org.springframework.stereotype.Component;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
-import java.util.HashSet;
 
 @Component
 public class PizzaRepositoryImpl implements PizzaRepository {

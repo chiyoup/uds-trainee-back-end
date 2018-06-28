@@ -14,17 +14,14 @@ public class PizzaController {
     private PizzaService pizzaService;
 
     @PostMapping
-    public ResponseEntity criar(@RequestBody Pizza pizza) {
-        Pizza pizzaCriada = this.pizzaService.criar(pizza);
-        return new ResponseEntity(
-                pizzaCriada
-                        .toString(),
-                HttpStatus.CREATED);
+    public ResponseEntity criar(@RequestBody PizzaDTO pizzaDTO) {
+        Pizza pizza = this.pizzaService.salvar(pizzaDTO);
+        return new ResponseEntity(pizza.toString(), HttpStatus.CREATED);
     }
 
     @PutMapping
-    public ResponseEntity editar(@RequestParam("id")UUID id, @RequestBody Pizza pizza) {
-        this.pizzaService.editar(id, pizza);
+    public ResponseEntity editar(@RequestParam("id")UUID id, @RequestBody PizzaDTO pizzaDTO) {
+        Pizza pizza = this.pizzaService.editar(id, pizzaDTO);
         return new ResponseEntity("Editado com sucesso!", HttpStatus.OK);
     }
 

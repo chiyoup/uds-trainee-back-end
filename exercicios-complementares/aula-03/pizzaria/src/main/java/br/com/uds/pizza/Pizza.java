@@ -15,14 +15,14 @@ public class Pizza {
     private String queijo;
     private String molho;
     private String sabor;
-    private Integer tempoDePreparo;
+    private int tempoDePreparo;
 
     private Pizza() {
         this.id = UUID.randomUUID();
         this.dataCadrastro = LocalDateTime.now();
     }
 
-    public Pizza(String massa, String queijo, String molho, String sabor, Integer tempoDePreparo) {
+    public Pizza(String massa, String queijo, String molho, String sabor, int tempoDePreparo) {
         this();
         this.massa = massa;
         this.queijo= queijo;
@@ -35,16 +35,8 @@ public class Pizza {
         return id;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
     public LocalDateTime getDataCadrastro() {
         return dataCadrastro;
-    }
-
-    public void setDataCadrastro(LocalDateTime dataCadrastro) {
-        this.dataCadrastro = dataCadrastro;
     }
 
     public String getMassa() {
@@ -83,7 +75,7 @@ public class Pizza {
         return tempoDePreparo;
     }
 
-    public void setTempoDePreparo(Integer tempoDePreparo) {
+    public void setTempoDePreparo(int tempoDePreparo) {
         this.tempoDePreparo = tempoDePreparo;
     }
 
