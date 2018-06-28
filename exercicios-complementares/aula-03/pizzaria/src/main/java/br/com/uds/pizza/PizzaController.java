@@ -15,13 +15,13 @@ public class PizzaController {
 
     @PostMapping
     public ResponseEntity criar(@RequestBody PizzaDTO pizzaDTO) {
-        Pizza pizza = this.pizzaService.salvar(pizzaDTO);
-        return new ResponseEntity(pizza.toString(), HttpStatus.CREATED);
+        Pizza pizzaCriada = this.pizzaService.salvar(pizzaDTO);
+        return new ResponseEntity(pizzaCriada.toString(), HttpStatus.CREATED);
     }
 
     @PutMapping
     public ResponseEntity editar(@RequestParam("id")UUID id, @RequestBody PizzaDTO pizzaDTO) {
-        Pizza pizza = this.pizzaService.editar(id, pizzaDTO);
+        this.pizzaService.editar(id, pizzaDTO);
         return new ResponseEntity("Editado com sucesso!", HttpStatus.OK);
     }
 
