@@ -1,0 +1,199 @@
+CREATE SCHEMA `udstrainee`;
+
+
+use udstrainee;
+
+
+CREATE TABLE anime (
+id INT(6) NOT NULL AUTO_INCREMENT,
+nome VARCHAR(255),
+e_bom_ou_ruim BOOLEAN,
+
+PRIMARY KEY(id)
+);
+
+
+CREATE TABLE personagens (
+id INT(6) NOT NULL AUTO_INCREMENT,
+id_anime INT(6) NOT NULL,
+nome VARCHAR(255),
+poder INT(6),
+PRIMARY KEY(id),
+FOREIGN KEY(id_anime) REFERENCES anime(id)
+);
+
+
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('One Piece', true);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('1', true);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('2', false);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('3', true);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('4', true);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('5', false);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('6', false);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('7', true);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('8', true);
+INSERT INTO anime (nome, e_bom_ou_ruim) VALUES ('9', false);
+
+
+SELECT *FROM anime;
+
+
+INSERT INTO personagens (id_anime, nome, poder) VALUES (1, 'Luffy', 400);
+
+
+SELECT* FROM `udstrainee`.personagens;
+
+
+SELECT* FROM `udstrainee`.anime;
+
+
+DELETE FROM anime WHERE id = 2;
+
+
+SELECT * FROM anime;
+
+
+DELETE FROM anime WHERE id IN (3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+
+
+SELECT * FROM anime;
+
+
+SELECT * FROM personagens;
+
+
+CREATE SCHEMA `exercicio01`;
+
+
+use exercicio01;
+
+
+CREATE TABLE educacao (
+id INT(6) NOT NULL AUTO_INCREMENT,
+nome_instituicao VARCHAR(255) NOT NULL,
+nome_curso VARCHAR(255) NOT NULL,
+professor VARCHAR(255) NOT NULL,
+valor INT NOT NULL,
+ativo BOOLEAN NOT NULL,
+data_matricula DATETIME NOT NULL,
+
+PRIMARY KEY(id)
+);
+
+
+CREATE TABLE aluno (
+id INT(6) NOT NULL AUTO_INCREMENT,
+educacao_id INT(6) NOT NULL,
+nome VARCHAR(255) NOT NULL,
+idade INT NOT NULL,
+sexo BOOLEAN NOT NULL,
+
+PRIMARY KEY(id),
+FOREIGN KEY (educacao_id) REFERENCES educacao(id)
+);
+
+
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ();
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ();
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Arquitetura e Urbanismo', 'Cabral', 1100, true, 2018-06-20);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Design Interiores', 'Sergio', 800, true, 2015-02-10);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Desenvolvimento de Jogos', 'Pedro', 500, false, 2018-07-11);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Medicina', 'Cobra', 5000, true, 2012-05-30);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Sexologia', 'Laura', 200, true, 2017-03-15);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Engenharia Civil', 'Samara', 1500, false, 2015-06-01);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'LOL PRO Players', 'Yoda', 20, true, 2018-01-01);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Culinaria', 'Ana Maria Braga', 50, true, 2017-05-30);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Biologia', 'Batman', 6000, false, 2006-06-06);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Nanotecnologia', 'Homem Formiga', 9000, true, 2000-01-01);
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Arquitetura e Urbanismo', 'Cabral', 1100, true, '2018-06-20');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Design Interiores', 'Sergio', 800, true, '2015-02-10');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Desenvolvimento de Jogos', 'Pedro', 500, false, '2018-07-11');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Medicina', 'Cobra', 5000, true, '2012-05-30');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Sexologia', 'Laura', 200, true, '2017-03-15');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Engenharia Civil', 'Samara', 1500, false, '2015-06-01');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'LOL PRO Players', 'Yoda', 20, true, '2018-01-01');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Culinaria', 'Ana Maria Braga', 50, true, '2017-05-30');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Biologia', 'Batman', 6000, false, '2006-06-06');
+INSERT INTO educacao(nome_instituicao, nome_curso, professor, valor, ativo, data_matricula)
+VALUES ('Unicesumar', 'Nanotecnologia', 'Homem Formiga', 9000, true, '2000-01-01');
+
+
+SELECT * FROM educacao;
+
+
+DELETE FROM educacao WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
+SELECT * FROM educacao;
+
+
+ALTER TABLE aluno 
+    CHANGE sexo sexo_feminino BOOLEAN NOT NULL;
+
+
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (11, 'Aline', 21, true);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (12, 'Wagner', 19, false);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (13, 'Elisa', 17, true);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (14, 'Fabio', 24, false);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (15, 'Elba', 34, true);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (16, 'Davi', 14, false);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (17, 'Pablo', 25, true);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (18, 'Rosa', 26, true);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (19, 'Junior', 19, false);
+INSERT INTO aluno(educacao_id, nome, idade, sexo_feminino)
+VALUES (20, 'Mario', 24, false);
+
+
+SELECT *FROM aluno;
+
+
+SELECT aluno.nome, educacao.nome_curso
+FROM educacao
+INNER JOIN aluno ON aluno.educacao_id = educacao.id;
+
+
+SELECT * FROM aluno, educacao;
+
+
+SELECT * FROM aluno;
+
+
+DELETE FROM educacao WHERE nome_instituicao and nome_curso and professor LIKE '%a%';
+
+
+SELECT DISTINCT nome
+FROM aluno
+WHERE LENGTH(nome)>10
+
+GROUP BY sexo_feminino
+ORDER BY id;

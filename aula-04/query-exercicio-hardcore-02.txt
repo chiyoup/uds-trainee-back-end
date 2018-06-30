@@ -1,0 +1,3 @@
+select pessoa.nome, postagem.conteudo
+from pessoa 
+inner join postagem on pessoa.id_postagem = postagem.id
